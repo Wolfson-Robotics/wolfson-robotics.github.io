@@ -1,0 +1,68 @@
+/*
+Wolfson Colors
+Red color: #CE2328
+Blue color: #24336D
+*/
+
+body { 
+    margin: 0;
+    padding: 0; 
+}
+
+* {
+    font-family: Courier, monospace;
+    color: black;
+}
+
+h2 {
+    margin: 0px;
+}
+
+#header {
+    background-color: #CE2328;
+    padding: 1% 0px;
+}
+
+#footer {
+    background-color: #CE2328;
+    padding: 1% 0px;
+}
+
+/*sections*/
+.section {
+    margin: 5% 2.5%;
+}
+.title-card {
+    background-color: #CE2328;
+    font-size: 200%;
+    padding: 1.4% 1%;
+    color: white;
+    text-shadow: -2px 2px 1px #24336D;
+}
+
+/*intro section */
+#title-sec {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15%; margin-right: 15%;
+    text-align: center;
+    align-items: center;
+}
+
+#title {
+    color: #CE2328;
+    font-size: 300%;
+    margin-bottom: 0px;
+    text-shadow: -2px 2px 1px #24336D;
+}
+
+/*robot section*/
+#robot-info {
+    display: grid;
+    grid-template-columns: auto 100%;
+    overflow: hidden;
+    column-gap: 1%;
+}
+
+
+
