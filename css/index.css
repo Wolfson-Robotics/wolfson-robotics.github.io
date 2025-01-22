@@ -6,7 +6,7 @@ Blue color: #24336D
 
 body { 
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 * {
@@ -18,14 +18,27 @@ h2 {
     margin: 0px;
 }
 
+hr {
+    height: 7px;
+    background-color: red;
+    border-color: transparent;
+    box-shadow: 0px 3px white, 0px 6px #24336D;
+}
+
 #header {
     background-color: #CE2328;
     padding: 1% 0px;
+    box-shadow: 0px 3px white, 0px 6px #24336D;
+}
+
+#header-icon {
+    width: 4%;
 }
 
 #footer {
     background-color: #CE2328;
     padding: 1% 0px;
+    box-shadow: 0px -3px white, 0px -6px #24336D;
 }
 
 /*sections*/
@@ -38,6 +51,8 @@ h2 {
     padding: 1.4% 1%;
     color: white;
     text-shadow: -2px 2px 1px #24336D;
+    box-shadow: 0px 3px white, 0px 6px #24336D;
+    margin-bottom: 1.5%;
 }
 
 /*intro section */
@@ -47,13 +62,19 @@ h2 {
     margin-left: 15%; margin-right: 15%;
     text-align: center;
     align-items: center;
+    margin-top: 2.5%;
 }
 
+/* title when it was just text
 #title {
     color: #CE2328;
-    font-size: 300%;
+    font-size: 450%;
     margin-bottom: 0px;
     text-shadow: -2px 2px 1px #24336D;
+}
+*/
+#title {
+    width: 80%;
 }
 
 /*robot section*/
