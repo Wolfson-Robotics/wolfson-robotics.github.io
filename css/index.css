@@ -11,18 +11,11 @@ body {
 
 * {
     font-family: Courier, monospace;
-    color: black;
+    color: inherit;
 }
 
 h2 {
     margin: 0px;
-}
-
-hr {
-    height: 7px;
-    background-color: red;
-    border-color: transparent;
-    box-shadow: 0px 3px white, 0px 6px #24336D;
 }
 
 a {
@@ -47,7 +40,6 @@ a {
 #header-right {
     background-color: white;
     padding: 0.3% 0.7%;
-    border-radius: 0.5em;
     border: solid #24336D;
     border-radius: 0.5em;
     outline: 3px solid white;
@@ -65,12 +57,71 @@ a {
     border-radius: 100%;
 }
 
-
-
+/*fotter*/
 #footer {
     background-color: #CE2328;
-    padding: 1% 0px;
+    padding: 2% 3%;
     box-shadow: 0px -3px white, 0px -6px #24336D;
+    display: flex;
+    justify-content:space-between;
+    color: white;
+}
+#footer-left {
+    display: flex;
+}
+#footer-left > * {
+    margin-right: 2em;
+}
+#footer-icon {
+    width: 35%;
+    background-color: white;
+    border: solid #24336D;
+    border-radius: 0.5em;
+    outline: 3px solid white;
+}
+.footer-links {
+    width: 10em;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    display: block;
+}
+.footer-links-title {
+    color: white;
+    margin: 0px;
+    font-size: large;
+    margin-left: 5%;
+}
+.footer-link-hr {
+    margin: 2% 0px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5%;
+}
+.footer-link {
+    list-style-type: none;
+    font-size: 90%;
+    margin-left: 5%;
+}
+.footer-link > * {
+    color: #f8f8f8;
+    font-weight: bold;
+    white-space: nowrap;
+}
+/*When the link has the mouse cursor hovered over*/
+.footer-link > *:hover {
+    font-size: 110%;
+    text-decoration: underline;
+}
+#footer-right {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+}
+#footer-affiliation {
+    font-size: 65%;
+    color: #f8f8f8;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*sections*/
@@ -95,6 +146,12 @@ a {
     text-align: center;
     align-items: center;
     margin-top: 2.5%;
+}
+.wolfson-line-break {
+    height: 7px;
+    background-color: #CE2328;
+    border-color: transparent;
+    box-shadow: 0px 3px white, 0px 6px #24336D;
 }
 
 /* title when it was just text
