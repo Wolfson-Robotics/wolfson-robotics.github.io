@@ -174,5 +174,12 @@ a {
     column-gap: 1%;
 }
 
+/*team section*/
+#team-info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1%;
+}
+
 
 
