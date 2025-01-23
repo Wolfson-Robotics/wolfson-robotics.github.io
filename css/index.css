@@ -25,15 +25,47 @@ hr {
     box-shadow: 0px 3px white, 0px 6px #24336D;
 }
 
-#header {
-    background-color: #CE2328;
-    padding: 1% 0px;
-    box-shadow: 0px 3px white, 0px 6px #24336D;
+a {
+    text-decoration: none;
 }
 
-#header-icon {
-    width: 4%;
+/*header*/
+#header {
+    background-color: #CE2328;
+    padding: 0.5% 0.5%;
+    box-shadow: 0px 3px white, 0px 6px #24336D;
+    display: flex;
+    justify-content: space-between;
 }
+#header-left {
+    background-color: white;
+    padding: 0.3% 0.7%;
+    border: solid #24336D;
+    border-radius: 0.5em;
+    outline: 3px solid white;
+}
+#header-right {
+    background-color: white;
+    padding: 0.3% 0.7%;
+    border-radius: 0.5em;
+    border: solid #24336D;
+    border-radius: 0.5em;
+    outline: 3px solid white;
+}
+#header-title {
+    font-weight: bolder;
+}
+.header-element {
+    text-align: center;
+    vertical-align: middle;
+    color: #24336D;
+}
+.header-icon {
+    width: 1.75em;
+    border-radius: 100%;
+}
+
+
 
 #footer {
     background-color: #CE2328;
