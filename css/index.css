@@ -168,9 +168,9 @@ a {
 
 /*robot section*/
 #robot-info {
-    display: grid;
-    grid-template-columns: auto 100%;
-    column-gap: 1%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1%;
 }
 
 /*team section*/
