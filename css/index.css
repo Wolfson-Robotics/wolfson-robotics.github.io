@@ -170,7 +170,6 @@ a {
 #robot-info {
     display: grid;
     grid-template-columns: auto 100%;
-    overflow: hidden;
     column-gap: 1%;
 }
 
