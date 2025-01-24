@@ -114,7 +114,8 @@ a {
 }
 #footer-right {
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: end;
     font-weight: bold;
 }
 #footer-affiliation {
@@ -122,6 +123,7 @@ a {
     color: #f8f8f8;
     margin: 0px;
     padding: 0px;
+    text-align: end;
 }
 
 /*sections*/
