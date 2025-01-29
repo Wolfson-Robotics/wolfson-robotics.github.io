@@ -23,7 +23,7 @@ a {
 }
 
 /*header*/
-#header {
+header {
     background-color: #CE2328;
     padding: 0.5% 0.5%;
     box-shadow: 0px 3px white, 0px 6px #24336D;
@@ -58,7 +58,7 @@ a {
 }
 
 /*fotter*/
-#footer {
+footer {
     background-color: #CE2328;
     padding: 2% 3%;
     box-shadow: 0px -3px white, 0px -6px #24336D;
