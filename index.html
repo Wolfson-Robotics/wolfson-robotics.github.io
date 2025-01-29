@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+
     <meta charset="utf-8">
     <title>Wolfson Robotics FTC-19916</title>
+
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script> 
+
+    <link rel="stylesheet" href="css/generic.css">
+    <link rel="stylesheet" href="reusable/css/section.css">
+    <link rel="stylesheet" href="reusable/css/link.css">
+    <link rel="stylesheet" href="reusable/css/headerandfooter.css">
+    <script src="reusable/headerandfooter.js"></script>
+</head>
 <body>
-    <header>
-        <div id="header-left">
-            <img class="header-element header-icon" src="assets/img/wolfson-robotics-icon.png">
-            <a id="header-title" class="header-element">Wolfson Robotics</a>
-        </div>
-        <div id="header-right">
-            <a href="https://www.duvalschools.org/o/swhs" alt="Wolfson Robotics Github">
-                <img class="header-element header-icon" src="assets/img/DCPS-icon.png">
-            </a>
-            <a href="https://github.com/Wolfson-Robotics" alt="Samuel W. Wolfson High School">
-                <img class="header-element header-icon" src="assets/img/github-mark.png">
-            </a>
-        </div>
-    </header>
+    <reusable-header></reusable-Header>
     <div id="title-sec" class="section">
         <img id="title" src="assets/img/wolfson-robotics-title.png">
         <img src="assets/img/placeholder.png">
@@ -59,7 +54,6 @@
         <div id="robot-info">
             <img id="robot-img" src="assets/img/placeholder.png">
             <div robot-desc>
-                <!--TODO: Fix this text overflowing off the div (Why does it do this???)-->
                 <p1>
                     Info needed: What can the robot do, how was it built, everything that the
                     code can do.
@@ -67,38 +61,7 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div id="footer-left">
-            <img id="footer-icon" src="assets/img/wolfson-robotics-icon.png">
-            <ul id="robotics-links" class="footer-links">
-                <!--<h4 class="footer-links-title">Temp</h4>
-                <hr class="footer-link-hr">-->
-                <li class="footer-link">
-                    <a href="https://github.com/Wolfson-Robotics">GitHub</a>
-                </li>
-                <li class="footer-link">
-                    <a href="https://github.com/Wolfson-Robotics/Wolfson-Robotics.github.io">Website Repo</a>
-                </li>
-                <li class="footer-link">
-                    <a href="https://ftc-events.firstinspires.org/team/19916">FTC Team</a>
-                </li>
-                <li class="footer-link">
-                    <a href="TODO: Find out">TODO Instagram</a>
-                </li>
-                <li class="footer-link">
-                    <a href="TODO: Find out">TODO more</a>
-                </li>
-            </ul>
-        </div>
-        <div id="footer-right">
-            <div id="footer-affiliation">
-                Wolfson Robotics, Samuel W. Wolfson High School, 2025<br>
-                7000 Powers Ave, Jacksonville, FL 32217<br>
-                Website developed by Harrison Field<br>
-                Licensed under the MIT License<br>
-            </div>
-        </div>
-    </footer>
+    <reusable-footer></reusable-footer>
 </body>
 
 </html>

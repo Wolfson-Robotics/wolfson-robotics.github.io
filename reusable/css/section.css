@@ -1,0 +1,13 @@
+/*sections*/
+.section {
+    margin: 5% 2.5%;
+}
+.title-card {
+    background-color: #CE2328;
+    font-size: 200%;
+    padding: 1.4% 1%;
+    color: white;
+    text-shadow: -2px 2px 1px #24336D;
+    box-shadow: 0px 3px white, 0px 6px #24336D;
+    margin-bottom: 1.5%;
+}
