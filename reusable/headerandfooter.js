@@ -4,15 +4,15 @@ class ReusableHeader extends HTMLElement {
         this.innerHTML = `
             <header>
                 <div id="header-left">
-                    <img class="header-element header-icon" src="assets/img/wolfson-robotics-icon.png">
+                    <img class="header-element header-icon" src="/assets/img/wolfson-robotics-icon.png">
                         <a id="header-title" class="header-element">Wolfson Robotics</a>
                 </div>
                 <div id="header-right">
                     <a href="https://www.duvalschools.org/o/swhs" alt="Wolfson Robotics Github">
-                        <img class="header-element header-icon" src="assets/img/DCPS-icon.png">
+                        <img class="header-element header-icon" src="/assets/img/DCPS-icon.png">
                     </a>
                     <a href="https://github.com/Wolfson-Robotics" alt="Samuel W. Wolfson High School">
-                        <img class="header-element header-icon" src="assets/img/github-mark.png">
+                        <img class="header-element header-icon" src="/assets/img/github-mark.png">
                     </a>
                 </div>
             </header>
@@ -27,7 +27,7 @@ class ReusableFooter extends HTMLElement {
         this.innerHTML = `
             <footer>
                 <div id="footer-left">
-                    <img id="footer-icon" src="assets/img/wolfson-robotics-icon.png">
+                    <img id="footer-icon" src="/assets/img/wolfson-robotics-icon.png">
                     <ul class="links">
                         <!--<h4 class="footer-links-title">Temp</h4>
                         <hr class="footer-link-hr">-->
