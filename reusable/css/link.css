@@ -22,12 +22,21 @@
     margin-left: 5%;
 }
 .link > * {
-    color: #f8f8f8;
-    font-weight: bold;
     white-space: nowrap;
+    font-weight: bold;
 }
 /*When the link has the mouse cursor hovered over*/
 .link > *:hover {
+    font-size: 110%;
+    text-decoration: underline;
+}
+
+
+/*For when the link is not an element in a list element*/
+.link-regular {
+    white-space: nowrap; 
+}
+.link-regular:hover {
     font-size: 110%;
     text-decoration: underline;
 }

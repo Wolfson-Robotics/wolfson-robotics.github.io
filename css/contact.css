@@ -1,0 +1,28 @@
+#info-body {
+    padding: 2% 5%;
+}
+
+#contact-title {
+    font-family: "Birthstone";
+    font-size: 9em;
+    color: #24336D;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -2px 2px 1px #CE2328;
+    height: 1.1em;
+}
+
+.social {
+    display: flex;
+    align-content: flex-start;  
+    margin-top: 1%;
+}
+
+.social-text {
+    color: #24336D;
+    font-weight: bold;
+}
+
+.social-img {
+    width: 9%;
+}
