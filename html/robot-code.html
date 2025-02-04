@@ -17,28 +17,66 @@
 	<div class="section">
 		<h2 class="title-card">The Code</h2>
 		<div class="right-align">
-			<div>
-				put info about the robot here
-			</div>
-			<img src="/assets/img/placeholder.png">
+			<p2>
+                <p>
+                    The robot was coded entirely in Java using the Android Studio IDE, which differs to the more
+                    beginner-friendly blocks IDE provided by FTC. Although blocks allows the
+                    programmer to make basic code for the robot, it simplifies Java and thus removes many
+                    pieces of useful functionality of Java.
+                </p>
+                <p>
+                    The project is stored on an online repository host called 
+                    "<a href="https://github.com">GitHub</a>", you can find the 
+                    2024-2025 season repository
+                    <a href="https://github.com/wolfson-robotics/Into-The-Deep">here</a>.
+                    It is reccomended to store code in an online repository to prevent an accident where code
+                    is lost and unable to be recovered. Github and many other repositories, uses a file versioning
+                    tool called "<a href="https://git-scm.com/downloads">git</a>", which is reccomended to use 
+                    in order to preserve file history to revert changes if needed or to use as progress 
+                    record for the portfolio. Either way, both "git" and "GitHub" are free and 
+                    will prevent any accidental code loss.
+                </p>
+                <p>
+                    The repository is
+                    <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">forked</a>
+                    from the original
+                    <a href="https://github.com/FIRST-Tech-Challenge/FtcRobotController">FtcRobotController</a>.
+                    We expand upon this code in TeamCode/src/main/java/org/firstinspires/ftc/teamcode, as per
+                    FTC's instructions. The robot is built on one initial class called RobotBase.java, which
+                    is used in all TeleOp classes as it provides reusable methods and variables reused in
+                    in AutoJava.java and DriveJava.java. DriveJava is simple and mainly provides a for loop
+                    that iterates over each gamepad button to check if it is active, if it is the corresponding
+                    interaction is activated (i.e. moving the joystick up triggers the wheels moving forward).
+                    For AutoJava see the below section.
+                </p>
+            </p2>
+			<img src="/assets/img/robot-code/androidstudioexample.png">
 		</div>
 	</div>
 	<div class="section">
 		<h2 class="title-card">Auto and the Debugger</h2>
 		<div class="left-align">
-			<img src="/assets/img/placeholder.png">
-			<div>
-				put info about the robot here
-			</div>
-		</div>
-	</div>
-	<div class="section">
-		<h2 class="title-card">Notes</h2>
-		<div class="right-align">
-			<div>
-				put info about the robot here
-			</div>
-			<img src="/assets/img/placeholder.png">
+			<img src="/assets/img/robot-code/autocodeexmaple.png">
+			<p2>
+                <p>
+                    The Autonomous of our robot is capable of picking up 4 samples and placing them in 
+                    high basket within the time limit. To do this there are 2 main components. 
+                    The main 
+                    <a href="https://github.com/Wolfson-Robotics/Into-the-Deep/blob/main/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/auto/AutoJava.java">AutoJava class</a>
+                    and the 
+                    <a href="https://github.com/Wolfson-Robotics/Into-the-Deep/blob/main/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/auto/instruct/AutoInstructionReader.java">Debugger</a>.
+                    The first component is the Debugger,
+                    a custom TeleOp class that records the movements of the robot on to a file that can be
+                    reused later. Then that file is fed into the second component, AutoJava, which by translating
+                    the saved file values into the code, can replicate the same actions made with the Debugger.
+                </p>
+                <p>
+                    In the repository AutoJava is extended multiple times in different classes within the
+                    auto directory. This is for the purpose of having different auto sequences, like red side
+                    4 samples, blue side 4 samples, parking, or specimen hanging. Each new sequence of movements
+                    recorded with the Debugger must be implemented in a new class extended off of AutoJava.
+                </p>
+            </p2>
 		</div>
 	</div>
 	<reusable-footer></reusable-footer>
