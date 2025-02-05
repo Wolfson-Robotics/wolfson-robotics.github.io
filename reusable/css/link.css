@@ -40,3 +40,9 @@
     font-size: 110%;
     text-decoration: underline;
 }
+
+/*For all "read more" in text*/
+.read-more {
+    font-weight: bolder;
+    color: #24336D;
+}
