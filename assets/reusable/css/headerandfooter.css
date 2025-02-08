@@ -33,7 +33,7 @@ header {
     border-radius: 100%;
 }
 
-/*fotter*/
+/*footer*/
 footer {
     background-color: #CE2328;
     padding: 2% 3%;
@@ -41,6 +41,7 @@ footer {
     display: flex;
     justify-content:space-between;
     color: white;
+    
 }
 #footer-left {
     display: flex;
