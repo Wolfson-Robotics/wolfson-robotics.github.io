@@ -34,10 +34,11 @@
 
 /*For when the link is not an element in a list element*/
 .link-regular {
-    white-space: nowrap; 
+    white-space: nowrap;
+    color: white;
 }
 .link-regular:hover {
-    font-size: 110%;
+    font-size: 1.1em /*Increase font size by 10% without knowing the original font-size*/;
     text-decoration: underline;
 }
 

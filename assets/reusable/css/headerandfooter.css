@@ -1,27 +1,40 @@
 /*header*/
 header {
     background-color: #CE2328;
-    padding: 0.5% 0.5%;
+    padding: 0.5% 0.75%;
     box-shadow: 0px 3px white, 0px 6px #24336D;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
 }
-#header-left {
-    background-color: white;
-    padding: 0.3% 0.7%;
+#header-wr {
     border: solid #24336D;
     border-radius: 0.5em;
     outline: 3px solid white;
-}
-#header-right {
     background-color: white;
     padding: 0.3% 0.7%;
-    border: solid #24336D;
-    border-radius: 0.5em;
-    outline: 3px solid white;
+}
+#header-pages {
+    flex: 1 1 auto;
+    color: white;
+    margin: 0;
 }
 #header-title {
     font-weight: bolder;
+}
+#header-external {
+    background-color: white;
+    padding: 0.3% 0.7%;
+    border: solid #24336D;
+    border-radius: 0.5em;
+    outline: 3px solid white;
+}
+.header-link {
+    font-weight: bolder;
+    font-size: 1.2em !important;
+}
+.header-link:hover {
+    font-size: 1.3em !important;
 }
 .header-element {
     text-align: center;
@@ -41,7 +54,6 @@ footer {
     display: flex;
     justify-content:space-between;
     color: white;
-    
 }
 #footer-left {
     display: flex;
@@ -56,6 +68,19 @@ footer {
     border-radius: 0.5em;
     outline: 3px solid white;
 }
+.footer-links-title {
+    color: white;
+    font-size: 1.1em;
+    margin-left: 5%;
+}
+.footer-links-hr {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.link {
+    margin-left: 5%;
+}
+
 #footer-right {
     display: flex;
     justify-content: flex-end;
