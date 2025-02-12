@@ -72,7 +72,7 @@ class ReusableFooter extends HTMLElement {
                         </li>
                     </ul>
                     <ul class="links">
-                        <h4 class="footer-links-title">Coding Resources</h4>
+                        <h4 class="footer-links-title">Code</h4>
                         <hr class="footer-links-hr">
                         <li class="link">
                             <a href="https://github.com">GitHub</a>

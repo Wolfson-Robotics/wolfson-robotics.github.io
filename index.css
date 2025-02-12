@@ -20,6 +20,11 @@
 #title {
     width: 80%;
 }
+#title-photo {
+    width: 80%;
+    border: 5px solid #CE2328;
+    border-radius: 1em;
+}
 
 /*robot section*/
 #robot-info {
@@ -34,6 +39,8 @@
     justify-content: flex-end;
     gap: 1%;
 }
+
+
 
 
 
