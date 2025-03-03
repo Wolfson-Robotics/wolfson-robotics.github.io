@@ -9,6 +9,11 @@ body {
     padding: 0;
 }
 
+.info-body {
+    padding: 2% 5%;
+    min-height: 90vh; /*So the footer stays at the bottom of the page*/
+}
+
 * {
     font-family: Courier, monospace;
     color: inherit;

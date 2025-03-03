@@ -1,0 +1,23 @@
+#title {
+    text-align: center;
+    font-size: 5em;
+}
+
+.sponsor {
+    /*temp*/
+    visibility: hidden;
+
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.sponsor-icon {
+    width: 20em;
+    border: 5px solid #CE2328;
+    border-radius: 1em;
+}
+.sponsor-name {
+    font-size: 4em;
+    color: #24336D;
+}

@@ -13,6 +13,8 @@ class ReusableHeader extends HTMLElement {
                         <a class="link-regular header-link" href="/robot-code">Code</a>
                         |
                         <a class="link-regular header-link" href="/contact">Contact</a>
+                        |
+                        <a class="link-regular header-link" href="/sponsors">Sponsors</a>
                     </p>
                     <div id="header-external">
                         <a href="https://www.duvalschools.org/o/swhs" alt="Wolfson Robotics Github">
@@ -47,6 +49,9 @@ class ReusableFooter extends HTMLElement {
                         </li>
                         <li class="link">
                             <a href="/robot-code">Code</a>
+                        </li>
+                        <li class="link">
+                            <a href="/sponsors">Sponsors</a>
                         </li>
                     </ul>
                     <ul class="links">
