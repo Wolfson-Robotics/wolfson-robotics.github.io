@@ -5,7 +5,7 @@
 
 .title-card {
     background-color: #CE2328;
-    font-size: 200%;
+    font-size: 2em;
     padding: 1.4% 1%;
     color: white;
     text-shadow: -2px 2px 1px #24336D;
@@ -23,4 +23,19 @@
     display: flex;
     justify-content: flex-end;
     gap: 1%;
+}
+
+.section-img {
+    width: 40vw;
+    height: 40vw;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+    .left-align, .right-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
