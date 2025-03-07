@@ -19,7 +19,7 @@ header {
     flex: 1 1 auto;
     color: white;
     margin: 0;
-    overflow: hidden;
+    overflow: scroll;
     white-space: nowrap;
 }
 #header-title {
