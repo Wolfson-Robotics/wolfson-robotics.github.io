@@ -6,6 +6,8 @@
     padding: 0px;
     text-shadow: -2px 2px 1px #CE2328;
     height: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #contact-intro-text {
@@ -27,4 +29,15 @@
 
 .contact-text {
     margin: 0.5% 0px;
+}
+
+@media all and (min-width:460px) and (max-width: 560px) {
+    #contact-title {
+        font-size: 7em;
+    }
+}
+@media all and (min-width:0px) and (max-width: 460px) {
+    #contact-title {
+        font-size: 4em;
+    }
 }
