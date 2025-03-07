@@ -31,7 +31,7 @@
     object-fit: cover;
 }
 
-@media only screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
     .left-align, .right-align {
         display: flex;
         align-items: center;
