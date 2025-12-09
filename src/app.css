@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@plugin 'flowbite/plugin';
+@source "../node_modules/flowbite-svelte/dist";
+@source "../node_modules/flowbite-svelte-icons/dist";
+
+@theme {
+    --color-wolfson-blue: #25346d;
+    --color-wolfson-red: #ce2328;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.hr-primary {
+  @apply mx-auto my-4 h-1 w-1/2 rounded-sm md:my-10;
+}
+
+.a-primary {
+  @apply 
+  inline-flex items-center justify-center 
+  rounded-lg p-5
+  text-base font-medium 
+  bg-gray-50 hover:bg-gray-100 hover:text-gray-900 hover:no-underline 
+  dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white;
+}
+
+.text-soft {
+  @apply text-slate-500;
+}
+
