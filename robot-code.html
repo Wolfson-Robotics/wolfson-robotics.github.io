@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Wolfson Robotics</title>
+		
+		<link href="./_app/immutable/assets/0.BFivScjw.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Tour.CD54FDqW.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/3.B1bU_ji2.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.LQv9LuzI.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/08VEOCo-.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Cu6ZMxVe.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/YFaN2fS0.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.QLAVq4_Q.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CO531mzn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C7WrNVNf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CQ1KJiuQ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CfgipOzL.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/cybLoY2I.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.D6zu_91Z.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/UvCHvPqA.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/vuUCQF56.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.BvzB7QQf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BnO3AF1s.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B7N-dj6D.js"><!--12qhfyh--><link rel="icon" href="/_app/immutable/assets/favicon.C0Ys_ck6.ico"/><!---->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><main><section class="py-5"><h1 class="text-wolfson-red text-3xl text-center font-bold">The Robot Code</h1> <div class="flex flex-col sm:flex-row px-5 sm:px-20 py-5 gap-10"><!--[--><div class="w-full flex bg-white border rounded-lg max-w-2xl border-gray-200 dark:bg-gray-800 dark:border-gray-700 shadow-md flex-col text-soft gap-y-2 p-4"><!--[!--><p>The robot was coded entirely in Java using the <a class="link-regular read-more svelte-z90xr3" href="https://developer.android.com/studio">Android Studio IDE</a>, which differs to the more beginner-friendly blocks IDE provided by FTC. Although blocks allows the programmer to make basic code for the robot, it lacks the many useful functionalities of Java.</p> <p>The project is stored on an online repository host called <a class="link-regular read-more svelte-z90xr3" href="https://github.com">GitHub</a>, you can find the 2024-2025 season repository <a class="link-regular read-more svelte-z90xr3" href="https://github.com/wolfson-robotics/Into-The-Deep">here</a>. It is reccomended to store code in an online repository to prevent an accident where code is lost and unable to be recovered. Github and many other repositories, uses a file versioning
+                tool called <a class="link-regular read-more svelte-z90xr3" href="https://git-scm.com/downloads">git</a>, which is reccomended to use in order to preserve file history to revert changes if needed or to use as a record for progress for the portfolio. Both "git" and "GitHub" are free and will prevent any accidental code loss.</p> <p>The repository is <a class="link-regular read-more svelte-z90xr3" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">forked</a> from the original <a class="link-regular read-more svelte-z90xr3" href="https://github.com/FIRST-Tech-Challenge/FtcRobotController">FtcRobotController</a>.
+                We expand upon this code in TeamCode/src/main/java/org/firstinspires/ftc/teamcode, as per
+                FTC's instructions. The robot is built on one initial class called RobotBase.java, which
+                is used in all TeleOp classes as it provides reusable methods and variables reused in
+                in AutoJava.java and DriveJava.java. DriveJava is simple and mainly provides a for loop
+                that iterates over each gamepad button to check if it is active, if it is the corresponding
+                interaction is activated (i.e. moving the joystick up triggers the wheels moving forward).
+                For AutoJava see the below section.</p><!----><!--]--><!----></div><!--]--><!----> <img class="object-scale-down rounded-md overflow-hidden" alt="Android studio robot code" src="/_app/immutable/assets/androidstudioexample.BLdc-Rha.png"/></div></section> <!--[!--><hr class="h-px my-8 border-0 hr-primary bg-gray-200 dark:bg-gray-700"/><!--]--><!----> <section class="py-5"><h1 class="text-wolfson-red text-3xl text-center font-bold">Autonomous and The Debugger</h1> <div class="flex flex-col sm:flex-row-reverse px-5 sm:px-20 py-5 gap-10"><!--[--><div class="w-full flex bg-white border rounded-lg max-w-2xl border-gray-200 dark:bg-gray-800 dark:border-gray-700 shadow-md flex-col text-soft gap-y-2 p-4"><!--[!--><p>The robot was coded entirely in Java using the <a class="link-regular read-more svelte-z90xr3" href="https://developer.android.com/studio">Android Studio IDE</a>, which differs to the more beginner-friendly blocks IDE provided by FTC. Although blocks allows the programmer to make basic code for the robot, it simplifies Java and thus removes many pieces of useful functionality of Java.</p> <p>The project is stored on an online repository host called <a class="link-regular read-more svelte-z90xr3" href="https://github.com">GitHub</a>, you can find the 2024-2025 season repository <a class="link-regular read-more svelte-z90xr3" href="https://github.com/wolfson-robotics/Into-The-Deep">here</a>. It is reccomended to store code in an online repository to prevent an accident where code is lost and unable to be recovered. Github and many other repositories, uses a file versioning tool called <a class="link-regular read-more svelte-z90xr3" href="https://git-scm.com/downloads">git</a>, which is reccomended to use in order to preserve file history to revert changes if needed or to use as a progress record for the portfolio. Both "git" and "GitHub" are free and will prevent any accidental code loss.</p> <p>The repository is <a class="link-regular read-more svelte-z90xr3" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">forked</a> from the original <a class="link-regular read-more svelte-z90xr3" href="https://github.com/FIRST-Tech-Challenge/FtcRobotController">FtcRobotController</a>. We expand upon this code in TeamCode/src/main/java/org/firstinspires/ftc/teamcode, as per FTC's instructions. The robot is built on one initial class called RobotBase.java, which is used in all TeleOp classes as it provides reusable methods and variables reused in in AutoJava.java and DriveJava.java. DriveJava is simple and mainly provides a for loop that iterates over each gamepad button to check if it is active, if it is the corresponding interaction is activated (i.e. moving the joystick up triggers the wheels moving forward). For AutoJava see the below section.</p><!----><!--]--><!----></div><!--]--><!----> <img class="object-scale-down rounded-md overflow-hidden" alt="Android studio robot code" src="/_app/immutable/assets/autocodeexmaple.C3X52WeJ.png"/></div></section> <div class="flex justify-center py-4"><!--[--><a href="/" class="text-center inline-flex items-center justify-center hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700 focus-within:ring-primary-300 dark:focus-within:ring-primary-800 px-5 py-2.5 text-sm focus-within:ring-4 focus-within:outline-hidden rounded-lg shadow-lg shadow-primary-500/50 dark:shadow-primary-800/80 bg-wolfson-red text-white font-bold"><!---->Return<!----></a><!--]--><!----></div></main><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1ul2sd7 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.LQv9LuzI.js"),
+						import("./_app/immutable/entry/app.QLAVq4_Q.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
