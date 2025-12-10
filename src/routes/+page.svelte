@@ -39,7 +39,7 @@
     function goToSection(section: HTMLElement) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
-
+    
 </script>
 
 
@@ -148,7 +148,7 @@ style="background-image: url({title_bg});"
 <section
 bind:this={contacts_section} 
 class="my-[5dvh] sm:my-[10dvh] px-4 sm:px-10 lg:px-20 flex items-center flex-col sm:flex-row gap-y-3 gap-x-20 justify-center text-soft">
-    <Card>
+    <Card class="dark:bg-white">
         <h3 class="text-center font-bold text-wolfson-red text-2xl py-2">Interested? Contact Us</h3>
         <A class="a-primary"href="mailto:wolfsonrobotics@gmail.com">
             wolfsonrobotics@gmail.com
@@ -191,4 +191,6 @@ class="my-[5dvh] sm:my-[10dvh] px-4 sm:px-10 lg:px-20 flex items-center flex-col
 #special-a:hover {
     font-size: larger;
 }
+
+
 </style>

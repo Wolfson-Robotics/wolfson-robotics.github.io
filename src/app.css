@@ -6,6 +6,10 @@
 @source "../node_modules/flowbite-svelte/dist";
 @source "../node_modules/flowbite-svelte-icons/dist";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @theme {
     --color-wolfson-blue: #25346d;
     --color-wolfson-red: #ce2328;
@@ -32,3 +36,25 @@ body {
   @apply text-slate-500;
 }
 
+
+/* Force browser to treat the site as light */
+html {
+  color-scheme: light; /* form elements, scrollbars, etc */
+}
+
+/* Override Tailwind dark: utilities globally */
+.dark {
+  /* Reset all dark-mode background, text, border, etc. */
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+}
+
+/* Optional: for other dark variants */
+.dark * {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: inherit !important;
+}
