@@ -11,7 +11,7 @@
 
 <section class="py-5">
     <h1 class="text-wolfson-red text-3xl text-center font-bold">The Robot Code</h1>
-    <div class="flex flex-col sm:flex-row px-5 sm:px-20 py-5 gap-10">
+    <div class="flex flex-col sm:flex-row px-5 sm:px-20 py-5 gap-10 justify-center">
         <Card size="lg" class="text-soft gap-y-2 p-4">
             <p>
                 The robot was coded entirely in Java using the <a class="link-regular read-more" href="https://developer.android.com/studio">Android Studio IDE</a>, which differs to the more beginner-friendly blocks IDE provided by FTC. Although blocks allows the programmer to make basic code for the robot, it lacks the many useful functionalities of Java.
@@ -41,9 +41,9 @@
 
 <Hr class="hr-primary"/>
 
-<section class="py-5">
+<section class="py-5 mx-auto justify-between">
     <h1 class="text-wolfson-red text-3xl text-center font-bold">Autonomous and The Debugger</h1>
-    <div class="flex flex-col sm:flex-row-reverse px-5 sm:px-20 py-5 gap-10">
+    <div class="flex flex-col sm:flex-row-reverse px-5 sm:px-20 py-5 gap-10 justify-center">
         <Card size="lg" class="text-soft gap-y-2 p-4">
             <p>
                 The robot was coded entirely in Java using the <a class="link-regular read-more" href="https://developer.android.com/studio">Android Studio IDE</a>, which differs to the more beginner-friendly blocks IDE provided by FTC. Although blocks allows the programmer to make basic code for the robot, it simplifies Java and thus removes many pieces of useful functionality of Java.

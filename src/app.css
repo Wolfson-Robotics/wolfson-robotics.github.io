@@ -1,14 +1,10 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
-
 @plugin 'flowbite/plugin';
+
 @source "../node_modules/flowbite-svelte/dist";
 @source "../node_modules/flowbite-svelte-icons/dist";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @theme {
     --color-wolfson-blue: #25346d;
@@ -17,6 +13,255 @@
 
 body {
   font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Force light mode and disable all dark mode styles */
+html, body {
+  color-scheme: light !important;
+}
+
+/* Disable dark mode styles completely */
+.dark,
+[data-theme="dark"],
+html.dark,
+body.dark {
+  color-scheme: light !important;
+}
+
+/* Override any dark mode CSS variables */
+:root {
+  --tw-bg-opacity: 1 !important;
+}
+
+/* Force light background colors */
+.bg-gray-50,
+.bg-gray-100,
+.bg-white {
+  background-color: rgb(249 250 251) !important;
+}
+
+/* Override Flowbite dark mode styles */
+.dark .bg-gray-50,
+.dark .bg-gray-100,
+.dark .bg-white,
+[data-theme="dark"] .bg-gray-50,
+[data-theme="dark"] .bg-gray-100,
+[data-theme="dark"] .bg-white {
+  background-color: rgb(249 250 251) !important;
+}
+
+/* Force light text colors */
+.text-gray-900,
+.text-gray-800,
+.text-gray-700 {
+  color: rgb(17 24 39) !important;
+}
+
+/* Override dark mode text colors */
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700,
+[data-theme="dark"] .text-gray-900,
+[data-theme="dark"] .text-gray-800,
+[data-theme="dark"] .text-gray-700 {
+  color: rgb(17 24 39) !important;
+}
+
+/* Comprehensive Flowbite dark mode override */
+.dark *,
+[data-theme="dark"] *,
+html.dark *,
+body.dark * {
+  --tw-bg-opacity: 1 !important;
+  --tw-text-opacity: 1 !important;
+  --tw-border-opacity: 1 !important;
+}
+
+/* Force all Flowbite components to light mode */
+.dark .flowbite *,
+[data-theme="dark"] .flowbite *,
+.dark [class*="flowbite"],
+[data-theme="dark"] [class*="flowbite"] {
+  background-color: white !important;
+  color: black !important;
+  border-color: rgb(229 231 235) !important;
+}
+
+/* Override specific Flowbite component dark styles */
+.dark .bg-gray-800,
+.dark .bg-gray-900,
+[data-theme="dark"] .bg-gray-800,
+[data-theme="dark"] .bg-gray-900 {
+  background-color: white !important;
+}
+
+.dark .text-white,
+[data-theme="dark"] .text-white {
+  color: black !important;
+}
+
+.dark .border-gray-600,
+.dark .border-gray-700,
+[data-theme="dark"] .border-gray-600,
+[data-theme="dark"] .border-gray-700 {
+  border-color: rgb(229 231 235) !important;
+}
+
+/* Specific Button and ButtonGroup overrides */
+.dark button,
+.dark .btn,
+.dark [class*="button"],
+[data-theme="dark"] button,
+[data-theme="dark"] .btn,
+[data-theme="dark"] [class*="button"] {
+  background-color: rgb(249 250 251) !important;
+  color: rgb(17 24 39) !important;
+  border-color: rgb(229 231 235) !important;
+}
+
+.dark .bg-gray-800,
+.dark .bg-gray-900,
+.dark button.bg-gray-800,
+.dark button.bg-gray-900,
+[data-theme="dark"] .bg-gray-800,
+[data-theme="dark"] .bg-gray-900,
+[data-theme="dark"] button.bg-gray-800,
+[data-theme="dark"] button.bg-gray-900 {
+  background-color: rgb(249 250 251) !important;
+  color: rgb(17 24 39) !important;
+}
+
+/* ButtonGroup specific overrides */
+.dark .btn-group,
+.dark .button-group,
+.dark [class*="ButtonGroup"],
+[data-theme="dark"] .btn-group,
+[data-theme="dark"] .button-group,
+[data-theme="dark"] [class*="ButtonGroup"] {
+  background-color: transparent !important;
+  border-color: rgb(229 231 235) !important;
+}
+
+.dark .btn-group button,
+.dark .button-group button,
+.dark [class*="ButtonGroup"] button,
+[data-theme="dark"] .btn-group button,
+[data-theme="dark"] .button-group button,
+[data-theme="dark"] [class*="ButtonGroup"] button {
+  background-color: rgb(249 250 251) !important;
+  color: rgb(17 24 39) !important;
+  border-color: rgb(229 231 235) !important;
+}
+
+/* Hover states for buttons */
+.dark button:hover,
+.dark .btn:hover,
+.dark [class*="button"]:hover,
+[data-theme="dark"] button:hover,
+[data-theme="dark"] .btn:hover,
+[data-theme="dark"] [class*="button"]:hover {
+  background-color: rgb(243 244 246) !important;
+  color: rgb(17 24 39) !important;
+}
+
+/* Card component overrides */
+.dark .card,
+.dark [class*="Card"],
+[data-theme="dark"] .card,
+[data-theme="dark"] [class*="Card"] {
+  background-color: white !important;
+  border-color: rgb(229 231 235) !important;
+}
+
+/* Footer component overrides */
+.dark footer,
+.dark .footer,
+.dark [class*="Footer"],
+[data-theme="dark"] footer,
+[data-theme="dark"] .footer,
+[data-theme="dark"] [class*="Footer"] {
+  background-color: white !important;
+  color: rgb(17 24 39) !important;
+  border-color: rgb(229 231 235) !important;
+}
+
+/* HR component overrides */
+.dark hr,
+.dark .hr,
+[data-theme="dark"] hr,
+[data-theme="dark"] .hr {
+  border-color: rgb(229 231 235) !important;
+  background-color: rgb(229 231 235) !important;
+}
+
+/* Link component overrides */
+.dark a,
+.dark .link,
+.dark [class*="Link"],
+[data-theme="dark"] a,
+[data-theme="dark"] .link,
+[data-theme="dark"] [class*="Link"] {
+  color: rgb(17 24 39) !important;
+}
+
+.dark a:hover,
+.dark .link:hover,
+.dark [class*="Link"]:hover,
+[data-theme="dark"] a:hover,
+[data-theme="dark"] .link:hover,
+[data-theme="dark"] [class*="Link"]:hover {
+  color: rgb(55 65 81) !important;
+}
+
+/* Ultimate fallback - force light mode on everything */
+* {
+  color-scheme: light !important;
+}
+
+/* Force all backgrounds to light */
+.dark *,
+[data-theme="dark"] *,
+html.dark *,
+body.dark * {
+  background-color: transparent !important;
+}
+
+/* Then restore specific light backgrounds */
+.dark .bg-white,
+.dark .bg-gray-50,
+.dark .bg-gray-100,
+.dark button,
+.dark .btn,
+.dark .card,
+[data-theme="dark"] .bg-white,
+[data-theme="dark"] .bg-gray-50,
+[data-theme="dark"] .bg-gray-100,
+[data-theme="dark"] button,
+[data-theme="dark"] .btn,
+[data-theme="dark"] .card {
+  background-color: white !important;
+}
+
+/* Force all text to dark */
+.dark *,
+[data-theme="dark"] *,
+html.dark *,
+body.dark * {
+  color: rgb(17 24 39) !important;
+}
+
+/* Restore specific text colors */
+.dark .text-soft,
+[data-theme="dark"] .text-soft {
+  color: rgb(100 116 139) !important;
+}
+
+/* Force all borders to light */
+.dark *,
+[data-theme="dark"] *,
+html.dark *,
+body.dark * {
+  border-color: rgb(229 231 235) !important;
 }
 
 .hr-primary {
@@ -29,32 +274,9 @@ body {
   rounded-lg p-5
   text-base font-medium 
   bg-gray-50 hover:bg-gray-100 hover:text-gray-900 hover:no-underline 
-  dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white;
+  /*dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white;*/
 }
 
 .text-soft {
   @apply text-slate-500;
-}
-
-
-/* Force browser to treat the site as light */
-html {
-  color-scheme: light; /* form elements, scrollbars, etc */
-}
-
-/* Override Tailwind dark: utilities globally */
-.dark {
-  /* Reset all dark-mode background, text, border, etc. */
-  --tw-bg-opacity: 1;
-  --tw-text-opacity: 1;
-  background-color: white !important;
-  color: black !important;
-  border-color: black !important;
-}
-
-/* Optional: for other dark variants */
-.dark * {
-  background-color: inherit !important;
-  color: inherit !important;
-  border-color: inherit !important;
 }

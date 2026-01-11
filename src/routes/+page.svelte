@@ -84,11 +84,11 @@ style="background-image: url({title_bg});"
 
 <section class="flex flex-col items-center text-soft px-2 gap-y-2">
     <h2 class="font-bold">Quick Links</h2>
-    <ButtonGroup class="text-softx">
-        <Button target=_blank href="https://www.duvalschools.org/o/swhs" class="text-soft">Wolfson High School</Button>
-        <Button href="/robot-code" class="text-soft">Robot Code</Button>
-        <Button target=_blank href="https://github.com/Wolfson-Robotics" class="text-soft">Github</Button>
-        <Button target=_blank href="https://ftc-events.firstinspires.org/2024/region/USFL/league/FLNE" class="text-soft">FTC NE-FL League</Button>
+    <ButtonGroup class="text-softx" style="background-color: white !important; border-color: rgb(229 231 235) !important;">
+        <Button target=_blank href="https://www.duvalschools.org/o/swhs" class="text-soft" style="background-color: rgb(249 250 251) !important; color: rgb(17 24 39) !important; border-color: rgb(229 231 235) !important;">Wolfson High School</Button>
+        <Button href="/robot-code" class="text-soft" style="background-color: rgb(249 250 251) !important; color: rgb(17 24 39) !important; border-color: rgb(229 231 235) !important;">Robot Code</Button>
+        <Button target=_blank href="https://github.com/Wolfson-Robotics" class="text-soft" style="background-color: rgb(249 250 251) !important; color: rgb(17 24 39) !important; border-color: rgb(229 231 235) !important;">Github</Button>
+        <Button target=_blank href="https://ftc-events.firstinspires.org/2024/region/USFL/league/FLNE" class="text-soft" style="background-color: rgb(249 250 251) !important; color: rgb(17 24 39) !important; border-color: rgb(229 231 235) !important;">FTC NE-FL League</Button>
     </ButtonGroup>
 </section>
 
@@ -97,7 +97,7 @@ style="background-image: url({title_bg});"
 <section class="my-[5dvh] sm:my-[10dvh] px-2">
     <h2 class="text-center font-bold text-wolfson-red text-5xl">FTC Into The Deep</h2>
     <div class="flex flex-col-reverse lg:flex-row justify-center items-center gap-x-10 gap-y-4 py-10 px-10">
-            <Card size="lg">
+            <Card size="lg" style="background-color: white !important; border-color: rgb(229 231 235) !important;">
                 <List tag="ul" class="space-y-1 p-4 text-soft">
                         The Robot was developed overtime throughout the 2024-2025 FTC season,
                     Into the Deep. It went through many different changes and iterations, but towards
@@ -148,7 +148,7 @@ style="background-image: url({title_bg});"
 <section
 bind:this={contacts_section} 
 class="my-[5dvh] sm:my-[10dvh] px-4 sm:px-10 lg:px-20 flex items-center flex-col sm:flex-row gap-y-3 gap-x-20 justify-center text-soft">
-    <Card class="dark:bg-white">
+    <Card style="background-color: white !important; border-color: rgb(229 231 235) !important;">
         <h3 class="text-center font-bold text-wolfson-red text-2xl py-2">Interested? Contact Us</h3>
         <A class="a-primary"href="mailto:wolfsonrobotics@gmail.com">
             wolfsonrobotics@gmail.com
@@ -178,7 +178,7 @@ class="my-[5dvh] sm:my-[10dvh] px-4 sm:px-10 lg:px-20 flex items-center flex-col
     <p>FTC Team 19916</p>
     <p>Samuel W. Wolfson Robotics School for the Advanced Studies</p>
   </div>
-  <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
+  <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
   <FooterCopyright href="/" by="Wolfson Robotics" />
 </Footer>
 
